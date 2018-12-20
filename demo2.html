@@ -1,1 +1,49 @@
-
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+		<link rel="stylesheet" href="styleLess.css" />
+		<title></title>
+		<style>
+			body{
+				margin: 0;
+			}
+			div{
+				float: left;
+			}
+			div:nth-child(1){
+				background-color: #0000FF;
+			}
+			div:nth-child(2){
+				background-color: #008000;
+			}
+			div:nth-child(3){
+				background-color: #AAAAAA;
+			}
+			div:nth-child(4){
+				background-color: #FF0000;
+			}
+			p {
+				width: 15rem;
+				height: 4rem;
+				background-color: gold;
+				clear: both;
+			}
+		</style>
+		<script type="text/javascript">
+			(function(){
+				var html = document.documentElement;
+				var width = html.getBoundingClientRect().width;
+				html.style.fontSize = width/15+'px';
+			})();
+		</script>
+	</head>
+	<body>
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+		<div>4</div>
+		<p></p>
+	</body>
+</html>
